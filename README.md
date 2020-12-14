@@ -50,9 +50,7 @@ Pedometer made in HTML5. Run the script index.html.
 <h2>Links and Download</h2>
 <ul>
 <li><a href="https://marketplace.firefox.com/app/podometre/">Web application on the Mozilla Marketplace</a> available in english, in french and partially in spanish</li>
-<li><a href="webapp/pedometer/">Online web application</a> available in english, in french and partially in spanish</li>
-<li><a href="webapp/pedometer/application-v2.1.zip">Development Code of the web application (version 2.1)</a> 
-</li>
+<li><a href="http://sebastien.menigot.free.fr/webapp/pedometer/">Online web application</a> available in english, in french and partially in spanish</li>
 </ul>
 
 ## Confidentiality
