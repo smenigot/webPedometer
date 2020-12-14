@@ -7,13 +7,13 @@ Pedometer made in HTML5. Run the script index.html.
 <p>However, it seems that the future of mobile technologies tends to turn to web technologies based on HTML5. Two projects of operating system arouse: <a href="https://www.mozilla.org/en-US/firefox/os/">Firefox OS</a> developed by the Mozilla Foundation and <a href="https://www.tizen.org">Tizen</a> developed by Linux Foundation. Note that web scripts can be added to programs in C++ through <a href="http://qt-project.org/doc/qt-4.8/qdeclarativejavascript.html">Qt Library</a>. These factors led me to develop a pedometer in HTML5 under the GNU GPLv3 License.</p>
 <p>The recent development of new functionality enables to get information from gyroscopes easily. The web browser will calculate the acceleration in three smartphone axes x, y and z. From these three signals, when a person has a smartphone in the pocket, the steps can be detected. This web application is based on measures of digital accelerometer [<a href="#ref2">2</a>].</p>
 
-<p style="text-align: center;"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained"><img src="img/axes.png" border="0" alt="axes of smartphone" title="axes of smartphone" width="265" height="247" /></a><span style="font-size: xx-small;"> </span></p>
+<p style="text-align: center;"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained">![Alt text](img/axes.png" border="0" alt="axes of smartphone" title="axes of smartphone" width="265" height="247" /></a><span style="font-size: xx-small;"> </span></p>
 <p><span style="font-size: xx-small;"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained"> </a></span></p>
 <p style="text-align: center;"><span style="font-size: xx-small;"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained">Orientation and motion data explained</a><br />Author: Sheppy (Mozilla Contributor).<br /><a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike</a> license (CC-BY-SA)</span></p>
 <p>The web application has been tested on a Geeksphone Peak (Madrid, Spain) with Firefox OS 1.3 Prerelase. Note that Firefox for Android, the web application works but no benchmark has been achieved in this platform.</p>
-<h2>Acceleration and Walking</h2>
+## Acceleration and Walking
 <p>The measurement principle is described in the block diagram given in the following figure.</p>
-<p style="text-align: center;"><img src="img/Diagramme1.png" border="0" alt="Flowchart" title="Flowchart" width="512" height="759" /></p>
+<p style="text-align: center;">![Alt text](img/Diagramme1.png) border="0" alt="Flowchart" title="Flowchart" width="512" height="759" /></p>
 <p>When a person walks, the smartphone in his pocket undergoes accelerations and decelerations. A step corresponds to a pseudo-period of the signal with acceleration variations. Counting the number of steps is therefore to increment a counter for pseudo-period performed.</p>
 <p> </p>
 <p style="text-align: center;"><img src="img/acc_xyz.png" border="0" alt="acceleration on 3 axes" title="acceleration on 3 axes" width="512" height="383" /></p>
@@ -33,9 +33,9 @@ Pedometer made in HTML5. Run the script index.html.
 <p>The main page shows the step number, the distance walked, mean and instantaneous speed and calories burned. In the current version, the lock screen does not launch in Firefox OS. When this application is running, the lock screen is automatically locked.</p>
 <p>From the menu, you can adjust the step size to determine the total distance traveled. We recommend counting your steps on a large known distance. The relationship between distance and the number of steps will give you the size of your steps. It is also possible to adjust the weight to calculate calories burned.</p>
 <p>Finally you can also have a description of the application.</p>
-<h2>Conclusion</h2>
+## Conclusion
 <p>This first version of the pedometer works on my Geeksphone Peak. It demonstrates the capabilities of real-time processing signal for an HTML5 application.</p>
-<h2>Version Note</h2>
+## Version Note
 <ul>
 <li>Version 1.0.3 : first public version. It can count step, speed and burned calories from accelerometers.</li>
 <li>Version 2.0.1 : the distance walked and the instantaneous speed can be checked from the  GPS data to increase the precision. However, it is just an option so  that the pedometer can continue to run even when GPS reception is poor. This option is activated by default. To activate it, go to the parameter menu, check the option and return to the main page.</li>
@@ -48,10 +48,10 @@ Pedometer made in HTML5. Run the script index.html.
 <li><a href="webapp/pedometer/application-v2.1.zip">Development Code of the web application (version 2.1)</a> 
 </li>
 </ul>
-<h2>Confidentiality</h2>
+## Confidentiality
 <p>The application does not require an internet connection. Your statistics is recorded on your smartphone. No data is transferred.</p>
 <p>The application is free under the <a href="https://www.gnu.org/licenses/licenses.html">GNU GPL v3 License</a>. Some javascript library are on MIT Licence and WTFPL Licence.</p>
-<h2>References</h2>
+## References
 <p>[1] Pedometer for Android : <a href="https://code.google.com/p/pedometer/">https://code.google.com/p/pedometer/</a></p>
 <p>[2] Zhao, N. <a href="http://www.analog.com/library/analogdialogue/archives/44-06/pedometer.html">Full-featured pedometer design realized with 3-Axis digital accelerometer</a>. Analog Dialogue, 2010, vol. 44, no 6, p. 1-5.</p>
 <p>[3] Kalman, R. E. <a href="http://dx.doi.org/10.1115/1.3662552">A New Approach to Linear Filtering and Prediction Problems.</a> Journal of basic Engineering, 1960, vol 82 (Series D), no 1, p. 35-45.</p>
