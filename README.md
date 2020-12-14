@@ -7,7 +7,7 @@ Pedometer made in HTML5. Run the script index.html.
 <p>However, it seems that the future of mobile technologies tends to turn to web technologies based on HTML5. Two projects of operating system arouse: <a href="https://www.mozilla.org/en-US/firefox/os/">Firefox OS</a> developed by the Mozilla Foundation and <a href="https://www.tizen.org">Tizen</a> developed by Linux Foundation. Note that web scripts can be added to programs in C++ through <a href="http://qt-project.org/doc/qt-4.8/qdeclarativejavascript.html">Qt Library</a>. These factors led me to develop a pedometer in HTML5 under the GNU GPLv3 License.</p>
 <p>The recent development of new functionality enables to get information from gyroscopes easily. The web browser will calculate the acceleration in three smartphone axes x, y and z. From these three signals, when a person has a smartphone in the pocket, the steps can be detected. This web application is based on measures of digital accelerometer [<a href="#ref2">2</a>].</p>
 
-<p style="text-align: center;"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained">![Alt text](img/axes.png" border="0" alt="axes of smartphone" title="axes of smartphone" width="265" height="247" /></a><span style="font-size: xx-small;"> </span></p>
+<p style="text-align: center;"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained"><img src="img/axes.png" border="0" alt="axes of smartphone" title="axes of smartphone" width="265" height="247" /></a><span style="font-size: xx-small;"> </span></p>
 <p><span style="font-size: xx-small;"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained"> </a></span></p>
 <p style="text-align: center;"><span style="font-size: xx-small;"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained">Orientation and motion data explained</a><br />Author: Sheppy (Mozilla Contributor).<br /><a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike</a> license (CC-BY-SA)</span></p>
 <p>The web application has been tested on a Geeksphone Peak (Madrid, Spain) with Firefox OS 1.3 Prerelase. Note that Firefox for Android, the web application works but no benchmark has been achieved in this platform.</p>
@@ -15,7 +15,7 @@ Pedometer made in HTML5. Run the script index.html.
 ## Acceleration and Walking
 
 <p>The measurement principle is described in the block diagram given in the following figure.</p>
-<p style="text-align: center;">![Alt text](img/Diagramme1.png)</p>
+<p style="text-align: center;"><img src="img/Diagramme1.png" border="0" alt="Flowchart" title="Flowchart" width="512" height="759" /></p>
 <p>When a person walks, the smartphone in his pocket undergoes accelerations and decelerations. A step corresponds to a pseudo-period of the signal with acceleration variations. Counting the number of steps is therefore to increment a counter for pseudo-period performed.</p>
 <p> </p>
 <p style="text-align: center;"><img src="img/acc_xyz.png" border="0" alt="acceleration on 3 axes" title="acceleration on 3 axes" width="512" height="383" /></p>
