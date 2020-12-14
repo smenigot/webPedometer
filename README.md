@@ -1,10 +1,8 @@
 # Pedometer in HTML5 for Firefox OS and Firefox for Android
 
-Pedometer made in HTML5. Run the script index.html. For more explanations, read the documentation in doc folder.
+Pedometer made in HTML5. Run the script index.html.
 
-
-<h1><strong>Pedometer in HTML5 for Firefox OS and Firefox for Android</strong></h1>
-<h2>Introduction</h2>
+## Introduction
 <p>Nowadays,the connected devices are increasingly present. They are especially the "stars" of the latest <a href="http://www.cesweb.org/">Consumer Electronics Show</a> 2014 (Las Vegas, NV, USA) . Among these devices, there is one who knows a revival: pedometer. For a long time, pedometer has established in hiking field. But it has suffered in comparison with  geolocation which can offers greater simplicity (no setting) and greater accuracy in distance measurements. However, geolocation can be a complement to the pedometer since only the pedometer can measure the number of steps. With the accession of smartphones, all these measures can easily be performed with the same device. For example, there is a version for Android pedometer under GNU GPLv3 license [<a href="#ref1">1</a>].</p>
 <p>However, it seems that the future of mobile technologies tends to turn to web technologies based on HTML5. Two projects of operating system arouse: <a href="https://www.mozilla.org/en-US/firefox/os/">Firefox OS</a> developed by the Mozilla Foundation and <a href="https://www.tizen.org">Tizen</a> developed by Linux Foundation. Note that web scripts can be added to programs in C++ through <a href="http://qt-project.org/doc/qt-4.8/qdeclarativejavascript.html">Qt Library</a>. These factors led me to develop a pedometer in HTML5 under the GNU GPLv3 License.</p>
 <p>The recent development of new functionality enables to get information from gyroscopes easily. The web browser will calculate the acceleration in three smartphone axes x, y and z. From these three signals, when a person has a smartphone in the pocket, the steps can be detected. This web application is based on measures of digital accelerometer [<a href="#ref2">2</a>].</p>
